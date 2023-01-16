@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <h1>Etch a Sketch Pad</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etch-A-Sketch</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="script.js" defer></script>
+	</head>
+	<body>
+		<h1>Etch a Sketch Pad</h1>
 
-    <div class="container-btn">
-    <button class="btn">Clear Pad</button>
-      <button class="btn" id="resize">Resize</button>
-    </div>  
-    
-    <div id="container">
-    </div>
-</body>
+		<div class="settings">
+      <button class="btn">Color Mode</button>
+      <button class="btn">Rainbow Mode</button>
+      <button class="btn">Eraser</button>
+			<button class="btn">Clear Pad</button>
+			<button class="btn" id="resize">Resize</button>
+      <!-- <input id="sizeSlider" type="range" value="16" min="1" max="64"> -->
+		</div>
+
+		<div id="container-holder">
+			<div id="container"></div>
+		</div>
+
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        midnightmoet
+      </p>
+      <a href="https://github.com/midnightmoet" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
+	</body>
 </html>

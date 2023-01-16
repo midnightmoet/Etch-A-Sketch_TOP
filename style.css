@@ -28,9 +28,22 @@ h1 {
     background: pink;
 }
 
-.container-btn {
+.settings {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 10px;
+}
+
+.btn {
+    border-radius: 10px;
+    border: 1px solid black;
+    background: white;
+    width: 75px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
 }
