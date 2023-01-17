@@ -1,5 +1,3 @@
-
-
 /* root holding colors for later use */
 :root {
 	--primary-dark: #333;
@@ -85,11 +83,17 @@ input {
     /* border: 1px solid pink; */
 }
 
+/* element surrounding button */
+#color-picker {
+	background: transparent;
+}
+
 button {
 	padding: 10px 20px;
 	margin-left: 10px;
 	border: 1px solid var(--primary-dark);
 	border-radius: 5px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
@@ -138,12 +142,15 @@ input[type="color"]::-webkit-color-swatch {
 	font-size: 20px;
 }
 
+
 .grid {
 	display: grid;
 	width: 500px;
 	height: 500px;
 	background-color: var(--secondary-light);
-	box-shadow: rgba(255, 192, 203, 0.24) 0px 3px 8px;
+	box-shadow: rgba(255, 165, 180, 0.24) 0px 3px 8px;
+	border: 3px solid black;
+	border-radius: 10px;
 }
 
 .grid-element {
